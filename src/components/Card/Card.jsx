@@ -1,16 +1,22 @@
 import InputArea from "../InputArea/InputArea"
 import {MdMoreHoriz,MdDeveloperBoard} from "react-icons/md";
 import "./Card.css"
-const Card=({label,more,inputid})=>{
+const Card=({id,label,inputid,body=[]})=>{
+    // const addCard=()=>{
+        // body.push(<InputArea/>)
+        // {body[]}.push("a");
+        // alert("Hello");
+        //}
     return(
-        <div className="card">
+            <div id={id}>
             <p id="head">
             <span>{label}</span>
             <span id="more">{<MdMoreHoriz/>}</span>
             </p>
-            <InputArea id={inputid}/>
+            
+            <p>{body}</p>
             <p id="footer">
-            <span>+ Add a card</span>
+            <span id="addCard" onClick="{addCard}">+ Add a card</span>
             <span>{<MdDeveloperBoard/>}</span>
             </p>
         </div>

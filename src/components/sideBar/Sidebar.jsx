@@ -3,17 +3,25 @@ import {MdPersonOutline, MdSettings,MdStickyNote2 ,MdKeyboardArrowDown,MdStarOut
 import {BiTable, BiCalendarAlt } from "react-icons/bi";
 import Item from "../item/Item";
 import { GoChevronRight,GoChevronLeft ,GoPlusSmall } from "react-icons/go";
+import React from "react";
 
 function Sidebar(){
+    const [isShowBody, setIsSHowBody] = React.useState(true);
+    const onClickHandler = () => {
+        setIsSHowBody(isShowBody => !isShowBody);
+      }
+    
 return(
-        
-        <div id="aside">
+           <div>
+           {!isShowBody && <div id="hide" onClick={onClickHandler}><GoChevronRight/></div>}
+
+          {isShowBody && <div id="aside" className="expand">
             <div className="account">
                 <p id="K">K</p>
                <div> <p id="keyvalue">KeyValue </p>
                <p id="free">Free</p>
                </div>
-               <p id="right"><GoChevronLeft/></p>
+               <p id="right" onClick={onClickHandler}><GoChevronLeft/></p>
             </div>
             <hr/>
             <div className="items">
@@ -26,11 +34,10 @@ return(
                 <Item label="Calendar" iconName= {< BiCalendarAlt size={12}/>} /><br/>
                 <div id="topic"><span>Your Boards</span> <span id="title_icon"><GoPlusSmall size={16}/></span></div>
                 <Item label="G&T" iconName= {<img id="pic" src={require("../../images/bg.jpeg")} alt=""  />} iconName2={<MdMoreHoriz size={13}/>} id2="more1" iconName3={<MdStarOutline size={14} />} id3="important"/><br/>
-                
             </div>
         
+        </div>}
         </div>
-    
 
 
 );

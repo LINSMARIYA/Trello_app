@@ -14,37 +14,37 @@ function TopNav(){
         <SelectField
          label=" " id="Workspace" //onChange={(value) => onChangeValue("role", value)}
          options ={[
-             {key:'', label:'Workspace'},
-             {key:'', label:'option'},
-             {key:'', label:'option'},
-             {key:'', label:'option'}
+             {key:'1', label:'Workspace'},
+             {key:'2', label:'option'},
+             {key:'3', label:'option'},
+             {key:'4', label:'option'}
          ]}
         />
          <SelectField
          label=" " id="" 
          options ={[
-             {key:'', label:'Recent' },
-             {key:'', label:'option'},
-             {key:'', label:'option'},
-             {key:'', label:'option'}
+             {key:'1', label:'Recent' },
+             {key:'2', label:'option'},
+             {key:'3', label:'option'},
+             {key:'4', label:'option'}
          ]}
         />
          <SelectField
          label=" " id="Starred" //onChange={(value) => onChangeValue("role", value)}
          options ={[
-             {key:'', label:'Starred'} ,
-             {key:'', label:'option'},
-             {key:'', label:'option'},
-             {key:'', label:'option'}
+             {key:'1', label:'Starred'} ,
+             {key:'2', label:'option'},
+             {key:'3', label:'option'},
+             {key:'4', label:'option'}
          ]}
         />
          <SelectField
          label=" " id="Templates" //onChange={(value) => onChangeValue("role", value)}
          options ={[
-             {key:'', label:'Templates'},
-             {key:'', label:'option'},
-             {key:'', label:'option'},
-             {key:'', label:'option'}
+             {key:'1', label:'Templates'},
+             {key:'2', label:'option'},
+             {key:'3', label:'option'},
+             {key:'4', label:'option'}
          ]}
         />
         <Button id="create" label="Create"/>

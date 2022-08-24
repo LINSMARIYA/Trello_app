@@ -1,6 +1,7 @@
 import "./MainSection.css"
 import Card from "../Card/Card";
 import TopSection from "../TopSection/TopSection";
+import InputArea from "../InputArea/InputArea";
 import { GoPlus } from "react-icons/go";
 const MainSection=()=>{
     return(
@@ -8,16 +9,26 @@ const MainSection=()=>{
         <TopSection/>
         <div id="TodoSection">
             
-            <div>
-            <Card label="To Do" inputid="Todo1"/>
+            <div className="card" id="todo">
+            <Card label="To Do" inputid="Todo1" body={[<InputArea />]}/>
+            
             </div>
           
-            <div>
-            <Card label="Doing" inputid="Doing1" />
+            <div className="card" id="doing">
+            <Card label="Doing" inputid="Doing1" 
+            body={
+                [<InputArea/>,<InputArea/>]
+                 }/>
+
             </div>
 
-            <div>
-            <Card label="Done" inputid="Done1"/>
+            <div className="card" id="done">
+            <Card label="Done" inputid="Done1" 
+            body={
+                [<InputArea/>,<InputArea/>,<InputArea/>]
+                 }
+            />
+
             </div>
 
             <div id="add_list">
