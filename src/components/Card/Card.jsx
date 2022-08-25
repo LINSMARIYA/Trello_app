@@ -2,7 +2,7 @@ import InputArea from "../InputArea/InputArea"
 import {MdMoreHoriz,MdDeveloperBoard} from "react-icons/md";
 import "./Card.css"
 import React, { useState } from 'react';
-// import {useRef, useEffect} from 'react';
+
 const Card=({id,label})=>{
    
     let dragged = null;
@@ -27,6 +27,7 @@ const Card=({id,label})=>{
         if (event.target.className === "dropzone") {
           dragged.parentNode.removeChild(dragged);
           event.target.appendChild(dragged);
+          // console.log(Card.cardCount)
         }
       });
    

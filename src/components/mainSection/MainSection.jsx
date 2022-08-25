@@ -5,7 +5,7 @@ import TopSection from "../TopSection/TopSection";
 import { GoPlus } from "react-icons/go";
 const MainSection=()=>{
   
-console.log(Card)
+
 
     
     return(
