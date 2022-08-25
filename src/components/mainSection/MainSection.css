@@ -1,16 +1,16 @@
 #TodoSection{
-    margin-left: 200px;
+    margin-left: 250px;
     display: flex;
     color: white;
 
 }
 #add_list{
-    font-size: 10px;
+    font-size: 15px;
     background-color: rgba(255, 255, 255, 0.301);
-    padding: 10px;
+    padding: 5px;
     margin : 15px 0px 0px 10px;
-    height: 10px;
-    width: 200px;
+    height: fit-content;
+    width: 230px;
 }
 .card{
     padding-top: 5px;
@@ -18,11 +18,11 @@
     padding-right: 5px;
     
     height: fit-content;
-    width: 200px;
+    width: 230px;
     background-color:#e9eaebfd;
     margin-top: 15px;
     margin-left: 10px;
-    border-radius: 1px;
+    border-radius: 3px;
     color: rgb(63, 62, 62);
     justify-content: space-between;
     padding-right: 5px;

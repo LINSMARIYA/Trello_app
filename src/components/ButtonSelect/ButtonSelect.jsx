@@ -1,4 +1,4 @@
-// import "./SelectField.css"
+import "./ButtonSelect.css"
 const ButtonSelect= ({
     label,
     onChange,
@@ -10,8 +10,8 @@ const ButtonSelect= ({
    
 }) => {
     return (
-        <div  id={id}  value={value} name={name} >
-            <select name={label}>
+        <div   id={id}  value={value} name={name} >
+            <select id="white"  name={label}>
                 {
                     options.map((item)=>(
                       <option  key={item.key} selected={item.key === value} id={statusId}>{item.label}</option>  

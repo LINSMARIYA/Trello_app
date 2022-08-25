@@ -1,32 +1,30 @@
 import "./MainSection.css"
 import Card from "../Card/Card";
 import TopSection from "../TopSection/TopSection";
-import InputArea from "../InputArea/InputArea";
+
 import { GoPlus } from "react-icons/go";
 const MainSection=()=>{
+  
+console.log(Card)
+
+    
     return(
         <div>
         <TopSection/>
         <div id="TodoSection">
             
-            <div className="card" id="todo">
-            <Card label="To Do" inputid="Todo1" body={[<InputArea />]}/>
+            <div className="card" id="todo" >
+            <Card label="To Do" inputid="Todo1" />
             
             </div>
           
             <div className="card" id="doing">
-            <Card label="Doing" inputid="Doing1" 
-            body={
-                [<InputArea/>,<InputArea/>]
-                 }/>
+            <Card label="Doing" inputid="Doing1" />
 
             </div>
 
             <div className="card" id="done">
             <Card label="Done" inputid="Done1" 
-            body={
-                [<InputArea/>,<InputArea/>,<InputArea/>]
-                 }
             />
 
             </div>

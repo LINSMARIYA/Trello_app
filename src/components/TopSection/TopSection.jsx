@@ -1,10 +1,10 @@
-import SelectField from "../selectField/SelectField";
+import ButtonSelect from "../ButtonSelect/ButtonSelect";
 import "./TopSection.css"
 const TopSection=()=>{
     return(
         <div id="TopSection">
 
-        {/* <SelectField
+        <ButtonSelect
          label=" " id="board" 
          options ={[
              {key:'', label:'Board' },
@@ -12,7 +12,7 @@ const TopSection=()=>{
              {key:'', label:'option'},
              {key:'', label:'option'}
          ]}
-        /> */}
+        />
             
         </div>
     )

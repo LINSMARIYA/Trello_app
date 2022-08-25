@@ -11,7 +11,7 @@ const SelectField = ({
 }) => {
     return (
         <div  id={id}  value={value} name={name} onChange={(event)  => onChange(event.target.value)}>
-            <select name={label}>
+            <select id="black" name={label}>
                 {
                     options.map((item)=>(
                       <option  key={item.key} selected={item.key === value} id={statusId}>{item.label}</option>  
