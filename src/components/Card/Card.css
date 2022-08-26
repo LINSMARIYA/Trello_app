@@ -16,5 +16,22 @@ margin-left: 156px;
 }
 .dropzone{
     min-height: 60px;
-   
+    overflow-y: scroll;
+    max-height: 700px;
+    scrollbar-width: 10px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+   
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: #cecccc;
+   border-radius: 5px;
+   
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(165, 165, 165);
+    border-radius: 5px;
+ 
+  }

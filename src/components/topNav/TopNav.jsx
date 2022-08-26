@@ -5,7 +5,7 @@ import InputField from "../InputField/InputField";
 import { MdErrorOutline,MdNotificationsNone } from "react-icons/md";
 
 
-function TopNav(){
+const TopNav=()=>{
    
     return(
         <div className="navtop"> 

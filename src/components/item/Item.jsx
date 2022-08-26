@@ -1,5 +1,5 @@
 import "./item.css"
-function Item(props){
+const Item=(props)=>{
     const {label,iconName,iconName2,id2,id3,iconName3}=props;
     return(
 

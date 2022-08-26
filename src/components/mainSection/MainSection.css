@@ -16,9 +16,10 @@
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    
+    /* overflow-y: scroll; */
     height: fit-content;
-    width: 230px;
+    /* max-height: 700px; */
+    width: 250px;
     background-color:#e9eaebfd;
     margin-top: 15px;
     margin-left: 10px;
